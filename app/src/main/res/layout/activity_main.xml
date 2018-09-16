@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,9 +15,7 @@
         android:text="ĐĂNG NHẬP"
         android:textColor="#F111"
         android:textSize="50dp"
-        android:gravity="center" />
-
-
+        android:gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -29,7 +28,7 @@
         android:hint="Nhập tên người dùng..."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/user"
+        android:id="@+id/edt_User"
         />
     </LinearLayout>
     <LinearLayout
@@ -42,7 +41,7 @@
         android:layout_height="50dp"
         app:srcCompat="@drawable/padlock_303266_960_720"/>
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/edt_Pass"
         android:hint="Nhập mật khẩu..."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,12 +49,12 @@
         android:inputType="textPassword" />
 </LinearLayout>
     <Button
-        android:id="@+id/btn_login"
+        android:layout_marginTop="@dimen/can_le_top"
+        android:id="@+id/btn_DangNhap"
+        android:background="@drawable/border_button"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ĐĂNG NHẬP"/>
-
-
-
+        android:text="ĐĂNG NHẬP"
+        android:textSize="@dimen/size_chu"/>
 </LinearLayout>

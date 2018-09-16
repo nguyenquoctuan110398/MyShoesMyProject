@@ -3,9 +3,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:background="@color/myshoe_xam"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".TuyChonActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +38,7 @@
         android:textSize="20dp"
         android:id="@+id/btn_Rating"/> //rating
     <Button
-        android:id="@+id/btn_LogOut"
+        android:id="@+id/btn_DangXuat"
         android:layout_marginTop="@dimen/can_le"
         android:textAllCaps="false"
         android:layout_below="@+id/btn_Rating"
@@ -56,10 +54,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_doanhthu"
+            android:id="@+id/btn_DoanhThu"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +64,7 @@
             android:textAllCaps="false"
             android:textStyle="bold" />
         <Button
-            android:id="@+id/btn_kho"
+            android:id="@+id/btn_Kho"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,9 +78,9 @@
             android:text="Bán Hàng"
             android:textAllCaps="false"
             android:textStyle="bold"
-            android:id="@+id/btn_banhang"/>
+            android:id="@+id/btn_BanHang"/>
         <Button
-            android:id="@+id/btn_tuychon"
+            android:id="@+id/btn_TuyChon"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -6,25 +6,22 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-
-public class KhoActivity extends AppCompatActivity {
+public class ThemMatHangActivity extends AppCompatActivity {
     private Button btnDoanhThu;
     private Button btnKho;
     private Button btnBanHang;
     private Button btnTuyChon;
-    private ImageButton btnPlus;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kho);
+        setContentView(R.layout.activity_themmathang);
 
         btnDoanhThu = findViewById(R.id.btn_DoanhThu);
         btnDoanhThu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_DoanhThu = new Intent(KhoActivity.this, DoangThuActivity.class);
+                Intent intent_DoanhThu = new Intent(ThemMatHangActivity.this, DoangThuActivity.class);
                 startActivity(intent_DoanhThu);
             }
         });
@@ -33,7 +30,7 @@ public class KhoActivity extends AppCompatActivity {
         btnBanHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_BanHang = new Intent(KhoActivity.this, BanHangActivity.class);
+                Intent intent_BanHang = new Intent(ThemMatHangActivity.this, BanHangActivity.class);
                 startActivity(intent_BanHang);
             }
         });
@@ -42,7 +39,7 @@ public class KhoActivity extends AppCompatActivity {
         btnKho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_Kho = new Intent(KhoActivity.this, KhoActivity.class);
+                Intent intent_Kho = new Intent(ThemMatHangActivity.this, KhoActivity.class);
                 startActivity(intent_Kho);
             }
         });
@@ -51,17 +48,8 @@ public class KhoActivity extends AppCompatActivity {
         btnTuyChon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_TuyChon = new Intent(KhoActivity.this, TuyChonActivity.class);
+                Intent intent_TuyChon = new Intent(ThemMatHangActivity.this, TuyChonActivity.class);
                 startActivity(intent_TuyChon);
-            }
-        });
-
-        btnPlus = findViewById(R.id.btn_Plus);
-        btnPlus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent_Plus = new Intent(KhoActivity.this, ThemMatHangActivity.class);
-                startActivity(intent_Plus);
             }
         });
     }

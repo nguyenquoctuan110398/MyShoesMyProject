@@ -20,33 +20,31 @@
             android:layout_height="wrap_content"
             android:text="KHO"
             android:textSize="@dimen/size_chu"
-            android:paddingLeft="8dp"
+            android:paddingLeft="@dimen/can_le"
             android:textColor="@android:color/white"
             android:textStyle="bold"/>
 
         <EditText
             android:textColor="@android:color/white"
-            android:id="@+id/edt_search"
+            android:hint="Tìm kiếm..."
+            android:id="@+id/edt_TimKiem"
             android:layout_weight="7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/can_le" />
-        <ImageButton
-            android:layout_gravity="bottom"
+        <Button
             android:layout_weight="1"
-            android:background="@color/myshoe_xanh"
-            android:id="@+id/btn_search"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_TimKiem"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_search" />
+            android:background="@android:drawable/ic_menu_search" />
 
         <ImageButton
-            android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@color/myshoe_xanh"
-            android:id="@+id/btn_plus"
+            android:id="@+id/btn_Plus"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             app:srcCompat="@android:drawable/ic_menu_add" />
 
 
@@ -188,7 +186,7 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_doanhthu"
+            android:id="@+id/btn_DoanhThu"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -196,7 +194,7 @@
             android:textAllCaps="false"
             android:textStyle="bold" />
         <Button
-            android:id="@+id/btn_kho"
+            android:id="@+id/btn_Kho"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -210,9 +208,9 @@
             android:text="Bán Hàng"
             android:textAllCaps="false"
             android:textStyle="bold"
-            android:id="@+id/btn_banhang"/>
+            android:id="@+id/btn_BanHang"/>
         <Button
-            android:id="@+id/btn_tuychon"
+            android:id="@+id/btn_TuyChon"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

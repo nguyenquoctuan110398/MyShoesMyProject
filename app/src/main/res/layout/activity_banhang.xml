@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/chieu_cao"
                 android:hint="Nhập Mã Sản Phẩm..."
-                android:id="@+id/edt_msp"/> //Nhập mã sản phẩm
+                android:id="@+id/edt_MaSP"/> //Nhập mã sản phẩm
             <TextView
 
                 android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/chieu_cao"
                 android:hint="Nhập Số Lượng..."
-                android:id="@+id/edt_sl"/> //Nhập số lượng
+                android:id="@+id/edt_SoLuong"/> //Nhập số lượng
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/chieu_cao"/> //Tự động hiện thời gian
@@ -90,10 +90,13 @@
         </LinearLayout>
     </LinearLayout>
     <Button
+        android:id="@+id/btn_ThanhToan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
+        android:layout_marginTop="@dimen/can_le_top"
         android:layout_centerInParent="true"
+        android:background="@drawable/border_button"
         android:text="Thanh Toán"
         android:textSize="@dimen/size_chu"/> //Button thanh toán
     <LinearLayout
@@ -103,7 +106,7 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_doanhthu"
+            android:id="@+id/btn_DoanhThu"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,7 +114,7 @@
             android:textAllCaps="false"
             android:textStyle="bold" />
         <Button
-            android:id="@+id/btn_kho"
+            android:id="@+id/btn_Kho"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,9 +128,9 @@
             android:text="Bán Hàng"
             android:textAllCaps="false"
             android:textStyle="bold"
-            android:id="@+id/btn_banhang"/>
+            android:id="@+id/btn_BanHang"/>
         <Button
-            android:id="@+id/btn_tuychon"
+            android:id="@+id/btn_TuyChon"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
