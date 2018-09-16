@@ -11,7 +11,6 @@ import android.widget.ImageButton;
 
 public class KhoActivity extends AppCompatActivity {
     private Button btnDoanhThu;
-    private Button btnKho;
     private Button btnBanHang;
     private Button btnTuyChon;
     private ImageButton btnPlus;
@@ -35,15 +34,6 @@ public class KhoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent_BanHang = new Intent(KhoActivity.this, BanHangActivity.class);
                 startActivity(intent_BanHang);
-            }
-        });
-
-        btnKho = findViewById(R.id.btn_Kho);
-        btnKho.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent_Kho = new Intent(KhoActivity.this, KhoActivity.class);
-                startActivity(intent_Kho);
             }
         });
 

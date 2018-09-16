@@ -11,7 +11,6 @@ public class TuyChonActivity extends AppCompatActivity {
     private Button btnDoanhThu;
     private Button btnKho;
     private Button btnBanHang;
-    private Button btnTuyChon;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,13 +43,6 @@ public class TuyChonActivity extends AppCompatActivity {
             }
         });
 
-        btnTuyChon = findViewById(R.id.btn_TuyChon);
-        btnTuyChon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent_TuyChon = new Intent(TuyChonActivity.this, TuyChonActivity.class);
-                startActivity(intent_TuyChon);
-            }
-        });
+
     }
 }
