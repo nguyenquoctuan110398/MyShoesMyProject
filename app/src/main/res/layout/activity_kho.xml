@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".KhoActivity">
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/myshoe_xanh"
+        android:id="@+id/kho">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KHO"
+            android:textSize="@dimen/size_chu"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:id="@+id/edt_search"
+            android:layout_weight="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/can_le" />
+        <ImageButton
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/myshoe_xanh"
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <ImageButton
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/myshoe_xanh"
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:background="@color/myshoe_xam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/kho">
+
+        <TableLayout
+            android:paddingLeft="@dimen/can_le"
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="STT"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="Mã sp"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="Tên sản phẩm"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="SL"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="Giá"
+                    android:textSize="@dimen/size_chu_bang" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:background="@color/myshoe_xam"
+                    android:text="1"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:background="@color/myshoe_xam"
+                    android:text="AF1"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:background="@color/myshoe_xam"
+                    android:text="Air Force 1"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="300k VNĐ"
+                    android:textSize="@dimen/size_chu_bang" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:background="@color/myshoe_xam"
+                    android:text="2"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:background="@color/myshoe_xam"
+                    android:text="VOS"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:background="@color/myshoe_xam"
+                    android:text="Vans Old Skool"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="@dimen/size_chu_bang" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="1200k VNĐ"
+                    android:textSize="@dimen/size_chu_bang" />
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/myshoe_xanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_doanhthu"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doanh Thu"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_kho"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Kho"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bán Hàng"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:id="@+id/btn_banhang"/>
+        <Button
+            android:id="@+id/btn_tuychon"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tùy Chọn"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>

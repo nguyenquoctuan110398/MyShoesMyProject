@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/myshoe_xam"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/bansanpham"
+        android:paddingLeft="@dimen/can_le"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bán Sản Phẩm"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_chu"
+        android:background="@color/myshoe_xanh"/> //Bán sản phẩm
+    <LinearLayout
+        android:layout_below="@+id/bansanpham"
+        android:layout_marginTop="@dimen/can_le"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/can_le"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chieu_cao"
+                android:text="Mã Sản Phẩm"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/> //Mã sản phẩm
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chieu_cao"
+                android:text="Đơn Giá"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/> //Đơn giá
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chieu_cao"
+                android:text="Số Lượng"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/> //Số lượng
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chieu_cao"
+                android:text="Thời Gian"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/> //Thời gian
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chieu_cao"
+                android:text="Thành Giá"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/> //Thành giá
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/can_le">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chieu_cao"
+                android:hint="Nhập Mã Sản Phẩm..."
+                android:id="@+id/edt_msp"/> //Nhập mã sản phẩm
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chieu_cao" /> //Tự động hiện đơn giá
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chieu_cao"
+                android:hint="Nhập Số Lượng..."
+                android:id="@+id/edt_sl"/> //Nhập số lượng
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chieu_cao"/> //Tự động hiện thời gian
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chieu_cao"/> //Tự động tính giá tiền
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:text="Thanh Toán"
+        android:textSize="@dimen/size_chu"/> //Button thanh toán
+    <LinearLayout
+        android:background="@color/myshoe_xanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_doanhthu"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doanh Thu"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_kho"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Kho"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bán Hàng"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:id="@+id/btn_banhang"/>
+        <Button
+            android:id="@+id/btn_tuychon"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tùy Chọn"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>

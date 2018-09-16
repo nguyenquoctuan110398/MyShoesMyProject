@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_chu">30dp</dimen>
+    <dimen name="can_le">15dp</dimen>
+    <dimen name="chieu_cao">40dp</dimen>
+    <dimen name="size_chu_bang">20dp</dimen>
+</resources>

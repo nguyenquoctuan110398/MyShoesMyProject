@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/myshoe_xam"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TuyChonActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tùy Chọn"
+        android:paddingLeft="@dimen/can_le"
+        android:textColor="@android:color/white"
+        android:background="@color/myshoe_xanh"
+        android:textSize="@dimen/size_chu"
+        android:id="@+id/tuychon"/> //Tùy chọn
+    <Button
+        android:layout_marginTop="@dimen/can_le"
+        android:textAllCaps="false"
+        android:layout_below="@+id/tuychon"
+        android:paddingLeft="@dimen/can_le"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm mặt hàng"
+        android:textSize="20dp"
+        android:id="@+id/btn_ThemMatHang"/> //thêm mặt hàng
+    <Button
+        android:layout_marginTop="@dimen/can_le"
+        android:textAllCaps="false"
+        android:paddingLeft="@dimen/can_le"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_ThemMatHang"
+        android:text="Rating"
+        android:textSize="20dp"
+        android:id="@+id/btn_Rating"/> //rating
+    <Button
+        android:id="@+id/btn_LogOut"
+        android:layout_marginTop="@dimen/can_le"
+        android:textAllCaps="false"
+        android:layout_below="@+id/btn_Rating"
+        android:paddingLeft="@dimen/can_le"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:textSize="20dp"/> //đăng xuất
+    <LinearLayout
+        android:background="@color/myshoe_xanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_doanhthu"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doanh Thu"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_kho"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Kho"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bán Hàng"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:id="@+id/btn_banhang"/>
+        <Button
+            android:id="@+id/btn_tuychon"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tùy Chọn"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+    </LinearLayout> //Thanh tùy chọn
+</RelativeLayout>
