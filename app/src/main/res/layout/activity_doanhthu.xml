@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".DoangThuActivity">
     <LinearLayout
+        android:weightSum="13"
         android:background="@color/myshoe_xanh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,122 +21,176 @@
             android:textStyle="bold"
             android:textColor="@android:color/white"/>
     </LinearLayout>
-    <RelativeLayout
+    <LinearLayout
         android:background="@color/myshoe_xam"
         android:layout_below="@+id/doanhthu"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <TableLayout
-        android:stretchColumns="*"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableRow
+        <TableLayout
+            android:stretchColumns="*"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"
-                android:gravity="center"
-                android:text="STT"/>
-            <TextView
-                android:text="Mã sp"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"
-                android:textStyle="bold"
-                android:gravity="center"/>
-            <TextView
-                android:text="Tên Sản Phẩm"
-                android:textStyle="bold"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"/>
-            <TextView
-                android:text="SL"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"
-                android:gravity="center"
-                android:textStyle="bold"/>
-            <TextView
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"
-                android:text="Thành Giá"
-                android:textStyle="bold"
-                android:gravity=""/>
-            <TextView
-                android:gravity="center"
-                android:text="Thời Gian"
-                android:textStyle="bold"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:text="1"
-                android:gravity="center"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"/>
-            <TextView
-                android:text="AF1"
-                android:gravity="center"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"/>
-            <TextView
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"
-                android:text="Air Force 1"/>
-            <TextView
-                android:text="1"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"
-                android:gravity="center"/>
-            <TextView
-                android:text="300k"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"
-                android:gravity="center"/>
-            <TextView
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"
-                android:text="13:25:30"
-                android:gravity="center"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:text="2"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"
-                android:gravity="center"/>
-            <TextView
-                android:text="AF1"
-                android:gravity="center"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"/>
-            <TextView
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"
-                android:text="Vans Old Skoll"/>
-            <TextView
-                android:text="2"
-                android:textSize="@dimen/size_chu_bang"
-                android:textColor="@android:color/black"
-                android:gravity="center"/>
-            <TextView
-                android:gravity="center"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"
-                android:text="800k"/>
-            <TextView
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/size_chu_bang"
-                android:text="15:11:59"
-                android:gravity="center"/>
-        </TableRow>
-    </TableLayout>
-    </RelativeLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:gravity="center"
+                    android:text="STT"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Mã sp"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Tên Sản Phẩm"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="SL"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:text="Thành Giá"
+                    android:textStyle="bold"
+                    android:gravity=""/>
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Thời Gian"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="AF1"
+                    android:gravity="center"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:text="Air Force 1"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="300k"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:text="13:25:30"
+                    android:gravity="center"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="AF1"
+                    android:gravity="center"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:text="Vans Old Skoll"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:text="800k"/>
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_chu_bang"
+                    android:text="15:11:59"
+                    android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
     <LinearLayout
         android:background="@color/myshoe_xanh"
         android:layout_width="match_parent"
