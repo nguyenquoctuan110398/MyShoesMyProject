@@ -11,6 +11,8 @@ public class TuyChonActivity extends AppCompatActivity {
     private Button btnDoanhThu;
     private Button btnKho;
     private Button btnBanHang;
+    private Button btnThemMatHang;
+    private Button btnDangXuat;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,6 +42,22 @@ public class TuyChonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent_Kho = new Intent(TuyChonActivity.this, KhoActivity.class);
                 startActivity(intent_Kho);
+            }
+        });
+        btnDangXuat = findViewById(R.id.btn_DangXuat);
+        btnDangXuat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten_DangXuat = new Intent(TuyChonActivity.this, MainActivity.class);
+                startActivity(inten_DangXuat);
+            }
+        });
+        btnThemMatHang = findViewById(R.id.btn_ThemMatHang);
+        btnThemMatHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten_ThemMatHang = new Intent(TuyChonActivity.this, ThemMatHangActivity.class);
+                startActivity(inten_ThemMatHang);
             }
         });
 
